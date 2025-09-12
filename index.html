@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Download</title>
+</head>
+<body>
+    <h1>The Download</h1>
+    <div class="story-section">
+        <div class="sentence">
+            Knowing the <span class="interactive-word">game</span> would take several hours to download, I went to <span class="interactive-word">bed</span>.
+        </div>
+    </div>
+
+    <div class="story-section">
+        <div class="sentence">
+            When I woke up the next morning, I saw a pop-up window asking me to confirm to <span class="interactive-word" onclick="showPopup()">download</span>.
+        </div>
+        
+        <div class="computer-screen" id="computer-screen" onclick="wakeUpComputer()">
+            <div>Click to turn on your computer screen...</div>
+        </div>
+        
+        <div id="download-bar" class="hidden">
+            <div class="download-bar">
+                <div class="download-progress" id="progress-bar">Download Complete!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Window -->
+    <div id="popup" class="popup-window hidden">
+        <div style="font-weight: bold; margin-bottom: 10px;">Download Confirmation</div>
+        <div>A file named "MysticQuest_v2.3_FINAL.exe" is ready to install.</div>
+        <div style="font-size: 12px; color: #666; margin: 5px 0;">File size: 15.2 GB</div>
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="confirmDownload()">Confirm</button>
+            <button class="popup-btn cancel" onclick="cancelDownload()">Cancel</button>
+        </div>
+    </div>
+    
+    <div id="final-result" class="hidden story-section">
+        <div id="result-message" class="result-text"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

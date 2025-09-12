@@ -1,0 +1,156 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #64ffda;
+            margin-bottom: 40px;
+        }
+
+        .story-section {
+            background: #16213e;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #333;
+        }
+
+        .sentence {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #0f0f23;
+            border-radius: 5px;
+        }
+
+        .interactive-word {
+            background: #64ffda;
+            color: #0f0f23;
+            padding: 3px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .interactive-word:hover {
+            background: #4fd3b8;
+            transform: scale(1.1);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .popup-window {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border: 3px solid #999;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            z-index: 1000;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .popup-buttons {
+            margin-top: 15px;
+        }
+
+        .popup-btn {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .popup-btn:hover {
+            background: #005a99;
+        }
+
+        .popup-btn.cancel {
+            background: #cc0000;
+        }
+
+        .popup-btn.cancel:hover {
+            background: #990000;
+        }
+
+        .computer-screen {
+            background: #000000;
+            border: 10px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            color: #00ff00;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .computer-screen:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .download-bar {
+            width: 100%;
+            height: 20px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .download-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff00, #66ff66);
+            width: 0%;
+            transition: width 3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .result-text {
+            font-size: 1.2em;
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #64ffda;
+            background: rgba(100, 255, 218, 0.1);
+            font-family: monospace;
+            color: #64ffda;
+        }
+
+        .caret {
+            display: inline-block;
+            width: 10px;
+            background: #64ffda;
+            margin-left: 2px;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { background: transparent; }
+        }
