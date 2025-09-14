@@ -82,7 +82,7 @@
                     
                     setTimeout(() => {
                         // Reset and animate the progress bar
-                        const progressBar = document.getElementById('progress-bar');
+                        let progressBar = document.getElementById('progress-bar');
                         if (progressBar) {
                             progressBar.style.width = '0%';
                             progressBar.innerHTML = 'Installing...';
